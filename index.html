@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration-page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        border: 1px solid black;
+        width: 400px;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      h2 {
+        font: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 5px;
+        font: bold;
+      }
+      input {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+      select {
+        padding: 6px;
+        font: bold;
+        margin-bottom: 25px;
+      }
+      button {
+        padding: 10px;
+        background-color: rgb(115, 115, 231);
+        color: #fff;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Event-Registration-Form</h2>
+      <form id="Register">
+        <label for="fullname">FullName</label><br />
+        <input
+          type="text"
+          name="name"
+          id=""
+          placeholder="Enter your name"
+        /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="Email"
+          id=""
+          placeholder="Enter Your Email"
+        /><br />
+        <label for="PhoneNumber">PhoneNumber</label><br />
+        <input type="tel" name="" id="" placeholder="Enter Your Number" /><br />
+        <label for="Event">Select-Event</label>
+        <br />
+        <select name="Event" id="">
+          <option value="Select-Event">Select-Event</option>
+          <option value="Sports">Sports</option>
+          <option value="Drama">Drama</option>
+          <option value="Coding">Coding</option>
+          <option value="Dance">Dance</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
